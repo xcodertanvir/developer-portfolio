@@ -211,6 +211,9 @@ margin-bottom: 20px;
  }
     /* for mobile phone */
     @media  screen and (max-width:576px) {
+        main{
+            display: block;
+        }
         
         .header{
             
@@ -290,38 +293,85 @@ margin-bottom: 20px;
        
         .contact{
             display: grid;
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(1,2fr);
             margin-top: 25px;
+            background-color: #50e8ff;
+            padding:  0 150px;
+            padding-right: 200px;
             
         }
         .contact div{
-            display: block;
+            display: inline;
             justify-content: center;
             align-items: center;
             
         }
+      
         .contact-title{
-            font-size: 20px;
+            font-size: 30px;
             margin-bottom: 5px;
-            
+            align-items: center;
+            justify-content: center;
             white-space: nowrap;
             
            
         }
+        .btn-primary{
+            margin-right: 10px;
+            white-space: nowrap;
+        }
+        #btn-primary{
+           /* height: 46px;
+           
+            
+           font-weight: 500;
+           font-size: 24px;
+           padding:18px 25px ; */
+           height: 64px;
+           border-radius: 7px;
+           font-size: 20px;
+           padding:18px 25px ;
+           color: white;
+           font-size: 18px;
+           background: linear-gradient(cyan,orange);
+        }
         .section-description{
-            margin-right:55px ;
-            text-align: start;
+           align-items: center;
+           text-align: center;
+           justify-content: center;
+           display: inline-block;
+           margin-right: 300px;
         }
         #icon img{
             display: inline;
+           
         
         }
-        .contact-info{
-            margin-right: 250px;
+        #icon{
+            margin-right: 25px;
+            
+        }
+       
+        .section-title{
+            white-space: nowrap;
+            margin-bottom: 20px;
         }
         .msg{
            margin-right: 250px;
         }
+       .about{
+        text-align: center;
+       }
+       form{
+       
+        display: block;
+        width: 100%;
+        padding-right: 50px;
+      position: relative;
+      margin-left: -50px;
+       
+       }
+       
         
     }
     @media screen and (max-width:768px) {
